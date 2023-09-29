@@ -2,19 +2,23 @@
   "name": "byadab-nextjs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://venkart-leo.github.io/byadab-nextjs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "autoprefixer": "latest",
+    "gh-pages": "^6.0.0",
     "postcss": "latest",
     "tailwindcss": "latest"
   }
